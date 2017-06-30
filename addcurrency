@@ -1,0 +1,2 @@
+php artisan currency:manage add USD,IDR
+php artisan currency:update

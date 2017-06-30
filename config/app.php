@@ -177,8 +177,9 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
-	/* Currency Service Provider */
-	\Torann\Currency\CurrencyServiceProvider::class,
+	/* Custom Service Provider */
+	Torann\Currency\CurrencyServiceProvider::class,
+	JeroenNoten\LaravelAdminLte\ServiceProvider::class,
 
     ],
 

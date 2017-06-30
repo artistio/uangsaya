@@ -15,16 +15,18 @@ class CreateFinancialAccountsTable extends Migration
     {
         Schema::create('financial_accounts', function (Blueprint $table) {
             $table->increments('id');
-			$table->string('name', 50);
+			$table->string('name', 50)->unique();
 			$table->integer('type_id')->unsigned();
 			$table->foreign('type_id')
 				->references('id')->on('basic_account_types')
 				->onDelete('cascade');
-			$table->integer('account_number')->unsigned();
+			$table->string('bank_name', 50)->nullable();
+			$table->string('account_number', 30)->nullable();
 			$table->string('currency_code',10);
 			$table->foreign('currency_code')
 				->references('code')->on('currencies')
 				->onDelete('cascade');
+			$table->string('description',500)->nullable();
             $table->timestamps();
         });
     }
