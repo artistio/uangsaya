@@ -145,6 +145,17 @@ return [
             'url'  => '/account',
             'icon' => 'exchange',
         ],
+		'CONTACT',
+        [
+            'text' => 'Tambah Baru',
+            'url'  => '/contact/create',
+            'icon' => 'plus-square-o',
+        ],
+        [
+            'text' => 'List',
+            'url'  => '/contact',
+            'icon' => 'table',
+        ],
 
 /*        [
             'text'    => 'Account',

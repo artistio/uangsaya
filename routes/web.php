@@ -16,3 +16,4 @@ Route::get('/', function () {
 });
 
 Route::resource('account', 'FinancialAccountController');
+Route::resource('contact', 'ContactController');
