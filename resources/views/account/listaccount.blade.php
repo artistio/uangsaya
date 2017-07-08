@@ -24,6 +24,7 @@
 			<table class="table table-bordered table-hover">
 				<tr>
 					<th>Nama Rekening</th>
+					<th>Kode</th>
 					<th>Bank & Nomor Rekening</th>
 					<th>Mata Uang</th>
 					<th>Saldo</th>
@@ -32,6 +33,7 @@
 				@foreach($accountList as $account)
 					<tr>
 						<td>{{ $account->name }}</td>
+						<td>{{ $account->account_code }}</td>
 						<td>{{ $account->bank_name }} {{ $account->account_number }}</td>
 						<td>{{ $account->currency_code }}</td>
 						<td>Coming Soon</td>

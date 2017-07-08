@@ -20,6 +20,7 @@ class CreateFinancialAccountsTable extends Migration
 			$table->foreign('type_id')
 				->references('id')->on('basic_account_types')
 				->onDelete('cascade');
+			$table->string('account_code', 10)->unique();
 			$table->string('bank_name', 50)->nullable();
 			$table->string('account_number', 30)->nullable();
 			$table->string('currency_code',10);

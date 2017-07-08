@@ -49,6 +49,7 @@ class FinancialAccountController extends Controller
 		$newAccount->name = $request->name;
 		$newAccount->type_id = $request->type_id;
 		$newAccount->bank_name = $request->bank_name;
+		$newAccount->account_code = $request->account_code;
 		$newAccount->account_number = $request->account_number;
 		$newAccount->currency_code = $request->currency;
 		$newAccount->description = $request->description;

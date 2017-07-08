@@ -36,6 +36,10 @@
 					</select>
                 </div>
                 <div class="form-group float-label-control">
+                    <label for="">Kode Rekening</label>
+                    <input name="account_code" class="form-control" placeholder="Kode Rekening">
+                </div>
+                <div class="form-group float-label-control">
                     <label for="">Nama Bank/Manager Investasi (Opsional)</label>
                     <input name="bank_name" class="form-control" placeholder="Nama Bank/Manager Investasi">
                 </div>
