@@ -17,3 +17,7 @@ Route::get('/', function () {
 
 Route::resource('account', 'FinancialAccountController');
 Route::resource('contact', 'ContactController');
+Route::resource('income', 'TransactionController');
+Route::resource('expense', 'TransactionController');
+Route::resource('transfer', 'TransactionController');
+Route::resource('transaction', 'AdvanceTransactionController');

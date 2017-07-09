@@ -12,7 +12,7 @@ class LoadStandardAccount extends Seeder
     public function run()
     {
         //
-		DB::table('financial_accounts')->truncate();
+		//DB::table('financial_accounts')->truncate();
 		
 		DB::table('financial_accounts')->insert([
 			['name' => 'Cash in Hand', 'type_id' => 1, 'account_code' => '1000', 'currency_code' => 'IDR', 'description' => 'Uang tunai' ],
