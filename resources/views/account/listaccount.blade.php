@@ -36,7 +36,11 @@
 						<td>{{ $account->account_code }}</td>
 						<td>{{ $account->bank_name }} {{ $account->account_number }}</td>
 						<td>{{ $account->currency_code }}</td>
-						<td>Coming Soon</td>
+						@if (($account->type_id == 1) || ($account->type_id == 4))
+							<td>{{ $account->journalRecords->sum('credit_amount') - $account->journalRecords->sum('debit_amount') }}</td>
+						@else
+							<td>{{ $account->journalRecords->sum('debit_amount') - $account->journalRecords->sum('credit_amount') }}</td>
+						@endif
 						<td>{{ $account->description }}</td>
 					</tr>
 				@endforeach

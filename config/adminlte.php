@@ -136,15 +136,11 @@ return [
 		
 		'TRANSACTION',
         [
-            'text' => 'Pemasukan',
-            'url'  => '/account/create',
+            'text' => 'Transaksi Baru',
+            'url'  => '/transaction/create',
             'icon' => 'exchange',
         ],
-        [
-            'text' => 'Pengeluaran',
-            'url'  => '/account',
-            'icon' => 'exchange',
-        ],
+
 		'CONTACT',
         [
             'text' => 'Tambah Baru',

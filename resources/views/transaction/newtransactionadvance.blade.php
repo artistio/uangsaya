@@ -24,6 +24,11 @@
         <div class="col-sm-12">
             <form method="POST" action="/transaction">
 				{{ csrf_field() }}
+				<!-- Section for date picker -->
+				<div class="form-group">
+					<label for="transaction_date">Tanggal Transaksi (Tanggal/Bulan/Tahun)</label>
+					<input type="text" class="form-control pull-right" data-provide="datepicker" data-date-format="dd/mm/yyyy" name="transaction_date" value="{{ date('d/m/Y') }}">
+				</div>
 				<!-- Section for Debit -->
 				<div class="col-sm-6">
 					<h2>Transaksi Debit</h2>
@@ -86,8 +91,8 @@
 						@endfor
 					</table>
 				</div>
-				<div class="form-group float-label-control">
-                    <label for="">Deskripsi Transaksi</label>
+				<div class="form-group">
+                    <label for="description">Deskripsi Transaksi</label>
 					<textarea name="description" class="form-control" placeholder="Deskripsi Transaksi"></textarea>
                 </div>
 				<button type="submit" class="btn btn-primary">Simpan Transaksi</button>
@@ -98,8 +103,14 @@
 
 @section('css')
     <link rel="stylesheet" href="/css/admin_custom.css">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker.css">
 @stop
 
 @section('js')
     <script> console.log('Hi!'); </script>
+	<script
+			  src="https://code.jquery.com/jquery-3.2.1.min.js"
+			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			  crossorigin="anonymous"></script>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.js"></script>
 @stop

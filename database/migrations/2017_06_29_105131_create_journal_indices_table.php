@@ -15,6 +15,8 @@ class CreateJournalIndicesTable extends Migration
     {
         Schema::create('journal_indices', function (Blueprint $table) {
             $table->increments('id');
+			$table->date('transaction_date');
+			$table->string('name', 255);
             $table->timestamps();
         });
     }

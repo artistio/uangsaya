@@ -1,2 +1,4 @@
 php artisan currency:manage add USD,IDR
 php artisan currency:update
+php artisan db:seed --class=LoadDummyContact
+php artisan db:seed --class=LoadStandardAccount

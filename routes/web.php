@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
     return view('dashboard');
-});
+})->middleware('auth');
 
 Route::resource('account', 'FinancialAccountController');
 Route::resource('contact', 'ContactController');
@@ -21,3 +21,7 @@ Route::resource('income', 'TransactionController');
 Route::resource('expense', 'TransactionController');
 Route::resource('transfer', 'TransactionController');
 Route::resource('transaction', 'AdvanceTransactionController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
