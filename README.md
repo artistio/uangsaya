@@ -54,3 +54,8 @@ TO DO
 1. [8 July 2017] Tag untuk Journal Entry. Use case:
 	a. Pengelompokan transaksi untuk liburan (mis: Bali 2017, Bali 2018)
 	b. Pengelompokan pengeluaran untuk kendaraan (mis: B1234CD, B5678EF)
+1. [15 July 2017] Pengembangan transaksi selain Advance Transaction
+    a. Belanja
+	b. Makan Pagi/Siang/Malam
+	c. Bayar tagihan
+	d. etc.....
