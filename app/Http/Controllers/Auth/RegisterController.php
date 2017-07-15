@@ -21,13 +21,26 @@ class RegisterController extends Controller
     */
 
     use RegistersUsers;
-
+	
     /**
      * Where to redirect users after registration.
      *
      * @var string
      */
     protected $redirectTo = '/';
+
+	/* [15 July 2017] Modifying showRegistrationForm
+	** Form should only be shown when there are no users in the database
+	** Otherwise, error message form should be shown instead
+	*/
+	public function showRegistrationForm()
+    {
+		if (User::count() == 0) {
+			return view('auth.register');
+		} else {
+			return view('auth.registerdisabled');
+		}
+    }
 
     /**
      * Create a new controller instance.
@@ -62,10 +75,14 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => bcrypt($data['password']),
-        ]);
+		if (User::count() == 0) {
+			return User::create([
+				'name' => $data['name'],
+				'email' => $data['email'],
+				'password' => bcrypt($data['password']),
+			]);
+		} else {
+			return view('auth.registerdisabled');
+		}
     }
 }
