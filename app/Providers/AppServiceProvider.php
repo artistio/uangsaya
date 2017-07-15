@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Schema;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -13,7 +14,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        //
+        // Added to solve index length error. See https://laravel.com/docs/5.4/migrations#indexes
+	Schema::defaultStringLength(191);
     }
 
     /**
