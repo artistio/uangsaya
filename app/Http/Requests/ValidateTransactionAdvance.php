@@ -25,7 +25,7 @@ class ValidateTransactionAdvance extends FormRequest
     {
         return [
             //
-			'transaction_date' => 'required|date|date_format:d/m/Y',
+			'transaction_date' => 'required|date_format:d/m/Y',
 			'debit_account.*' => 'alpha_num|nullable',
 			'credit_account.*' => 'alpha_num|nullable', 
 			'debit_amount.*' => 'numeric|nullable',
