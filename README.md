@@ -45,6 +45,7 @@ Standard Chart of Account
 | 49?? | Hadiah | Pengeluaran untuk hadiah, seperti ulang tahun |
 | 4A?? | Hobby | Pengeluaran untuk hobi, seperti olahraga |
 | 4B?? | Biaya Bank | Pengeluaran untuk biaya administrasi bank, bunga, dll |
+| 4C?? | Makan Di Luar | Makan di restoran, kopi, gojek, delivery, dll |
 | 4ZZZ | Pengeluaran Lain-lain | Biaya yang belum dikategorikan |
 | 5??? | Equity | |
 | 51?? | Saldo Awal | Saldo transaksi awal rekening |
