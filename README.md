@@ -31,6 +31,7 @@ Standard Chart of Account
 | 31?? | Penjualan | Pemasukan dari hasil jualan dan usaha |
 | 32?? | Hasil Investasi | Pemasukan dari investasi, termasuk bunga bank |
 | 33?? | Klaim Asuransi | Pemasukan dari klaim asuransi |
+| 34?? | Pemasukan Bisnis | Biaya hasil penjualan. Mis: Hasil Penjualan Muesli |
 | 3ZZZ | Pemasukan Lain-lain | Pemasukan yang belum dikategorikan |
 | 4??? | Pengeluaran | |
 | 40?? | Pajak | Pembayaran pajak untuk kendaraan, rumah, dll |
@@ -45,6 +46,8 @@ Standard Chart of Account
 | 49?? | Hadiah | Pengeluaran untuk hadiah, seperti ulang tahun |
 | 4A?? | Hobby | Pengeluaran untuk hobi, seperti olahraga |
 | 4B?? | Biaya Bank | Pengeluaran untuk biaya administrasi bank, bunga, dll |
+| 4C?? | Makan Di Luar | Makan di restoran, kopi, gojek, delivery, dll |
+| 4D?? | Pengeluaran Bisnis | Biaya untuk beli bahan buat dijual. Mis: Biaya untuk Muesli |
 | 4ZZZ | Pengeluaran Lain-lain | Biaya yang belum dikategorikan |
 | 5??? | Equity | |
 | 51?? | Saldo Awal | Saldo transaksi awal rekening |
