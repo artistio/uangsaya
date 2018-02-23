@@ -32,7 +32,7 @@
 				</tr>
 				@foreach($accountList as $account)
 					<tr>
-						<td>{{ $account->name }}</td>
+						<td><a href="account/{{ $account->id }}">{{ $account->name }}</a></td>
 						<td>{{ $account->account_code }}</td>
 						<td>{{ $account->bank_name }} {{ $account->account_number }}</td>
 						<td>{{ $account->currency_code }}</td>
